@@ -1,0 +1,57 @@
+* What is the purpose of YAML?
+
+
+
+
+* Acmeism
+* How to Indent (2 space, seq-in-map, etc)
+  * do what libyaml does
+  * when not to indent (flow form)
+* When to quote
+  * When to plain (regex)
+  * When to > or |
+* YAML DSLs (SchemaType, Pegex)
+* Key sorting (Perl vs JavaScript)
+* Duplicate keys (which stack level)
+* YAML Stack
+  * Where is key order lost?
+  * Where are comments discarded?
+  * Short circuiting.
+  * PyYAML (is full stack)
+* Sexagesimal issues
+* Type repository issues
+* YAML Developers Kit
+  * vs Spec
+  * Test Suite
+  * Implementation Guidelines
+* JSON == YAML == TOML == INI == CSV == RDBMS (Relax)
+* SchemaType
+* Design by committee
+* The YAML Data Model
+  * hash, list, scalar
+  * Common Dynamic language
+* Syntax vs Model spec
+* YAML 1.3
+* YAML 2.0
++ YAML as a config language?
+
+
+- Using plain scalars for regex
+
+  /http[:]/
+
+- Sexagesimal issues in different languages
+
+    > perl -E 'use YAML::XS;say Load "12:34"'
+    12:34
+    > python -c 'import yaml;print yaml.load("12:34")'
+    754
+    > node -e 'yaml=require("js-yaml");console.log(yaml.load("12:34"))'
+    754
+    > ruby -e 'require "yaml";puts YAML.load "12:34"'
+    45240
+
+- flow vs block
+  - true, false, null
+
+- Show the YAML Test Suite
