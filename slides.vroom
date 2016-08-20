@@ -1,9 +1,9 @@
 ---- config
-title: Vroom!
+title: 10 Things You Don't Know About YAML
 indent: 5
 auto_size: 1
 vim_opts: '-u NONE'
-skip: 0
+skip: 79
 ---- center
 
 10 Things You Don't Know About YAML
@@ -17,7 +17,7 @@ Pittsburgh PA
 == /whois Ingy döt Net
 
   real:  Ingy döt Net
-+  legal: Ingy dot net
++  legal: Ingy dot Net
 +  first: Ingy
   last:  döt Net
 +  middle: ''
@@ -33,7 +33,12 @@ Pittsburgh PA
   - Ingy D Net
   - Ingy Net
   - Ingy Bot Net
-+  The UPS Incident:
+  - Ingy dÃ¶t Net
+
+----
+== /whois Ingy döt Net
+
+  The UPS Incident:
   - Ingy d t Net
   - Ingy dt Net
   - Ingy d?t Net
@@ -60,7 +65,7 @@ Pittsburgh PA
 
 +* Q/A
 * YAML Examples
-* A few stories
+* A Few Stories
 
 ----
 Q: What is YAML?
@@ -265,10 +270,10 @@ Q: What's the best practice for formatting YAML?
 
 ----
 Q: What is a YAML Dumper?
-+A: You should know this!
++A: Half of the common YAML API
 
-+  # Turn any variable into YAML
-  > perl -MYAML -E '$YAML::DumpCode=1; say Dump *YAML::'
+* Dump()
+* Load()
 
 ----
 Q: How many YAML Maintainers are at Abstractions?!
@@ -391,7 +396,7 @@ Q: What "kinds" of data structures does YAML support?
 
 ----
 Q: What kinds of data can be hash keys in YAML?
-+A: All 3 (hash, array, scalar)
++A: All 3 (mapping, sequence, scalar)
 
 ----
 Q: What does YAML have that JSON doesn't?
@@ -568,13 +573,6 @@ y:
   color: blue
 
 ----
-Q: Does YAML have dynamic features?
-
-* YAML is good for DSL
-  * SchemaType
-* DSL should not be baked in
-
-----
 Q: How do you roundtrip key order in YAML?
 +A: Use JavaScript!
 
@@ -598,16 +596,16 @@ d: 3,4
 +It could mean many things. YAML requires "Schema".
 
 ----
-foo: bar: baz
-
-+Error: Colon in value.
-
-----
  + foo
  + bar
  + baz
 
 +"+ foo + bar + baz"
+
+----
+foo: bar: baz
+
++Error: Colon in value.
 
 ----
 url: http://yaml.org
@@ -683,13 +681,6 @@ code: |2+
 +{"code":"  sub foo {\n    …;\n  }\n\n"}
 
 ----
-code: |
-def foo:
-    pass
-
-+Depends
-
-----
 a: x
 a: y
 
@@ -703,18 +694,18 @@ a: y
 ----
 Q: What is the future of YAML?
 
-* YAML Book
+* YAMLIO
 * YAML 1.3
-* YAML2 / YAMLIO
 * YAML 2.0
+* SchemaType
 * Yadda - Config
-* YVal - Schema
 * YPath - Search
+* YAML Book
 * Dual Spec
 * libyaml-1.2
 * libyaml-2.0
 * Pegex + CafeScript
-* Full Stack Implementation
+* Full Stack Implementations
 
 ----
 Q: Who is actively pushing YAML forward?
