@@ -3,7 +3,7 @@ title: 10 Things You Don't Know About YAML
 indent: 5
 auto_size: 1
 vim_opts: '-u NONE'
-skip: 79
+skip: 0
 ---- center
 
 10 Things You Don't Know About YAML
@@ -14,7 +14,7 @@ Abstractions 2016
 Pittsburgh PA
 
 ----
-== /whois Ingy döt Net
+== Ingy döt Net
 
   real:  Ingy döt Net
 +  legal: Ingy dot Net
@@ -23,7 +23,7 @@ Pittsburgh PA
 +  middle: ''
 
 ----
-== /whois Ingy döt Net
+== Ingy döt Net
 
   Common Variations:
   - Ingy Dot Net
@@ -36,12 +36,13 @@ Pittsburgh PA
   - Ingy dÃ¶t Net
 
 ----
-== /whois Ingy döt Net
+== Ingy döt Net
 
   The UPS Incident:
   - Ingy d t Net
   - Ingy dt Net
   - Ingy d?t Net
+
 +  My Original Name:
 +  - Ingy dot GeoCities dot Net
 
@@ -50,10 +51,11 @@ Pittsburgh PA
 
 * Ingy döt Net
   * Seattle
+  * Acmeism
   * Hewlett Packard Enterprise
 +* Ingy Invented YAML over 5 years
 +* People learn YAML in 5 minutes
-+* YAML is a deep subject
++* YAML is actually a deep subject
 
 ----
 == 10 Things You Don't Know About YAML
